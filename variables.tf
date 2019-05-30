@@ -1,12 +1,13 @@
 variable "resource_groups" {
-    description = "(Required) Map of the resource groups to create"
-    type = "map"
+  description = "(Required) Map of the resource groups to create"
+  type        = map(string)
 }
 
 variable "location" {
-    description = "(Required) Define the region where the resource groups will be created"
+  description = "(Required) Define the region where the resource groups will be created"
 }
 
 variable "prefix" {
-    description = "(Optional) You can use a prefix to add to the list of resource groups you want to create"
+  description = "(Optional) You can use a prefix to add to the list of resource groups you want to create"
 }
+
